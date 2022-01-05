@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Dilbek Alimurodov </title>
+</head>
+<style>
+    *{
+        margin: 0;
+        padding: 0;
+    }
+    header{
+        display: flex;
+        background: cornflowerblue;
+        padding: 15px 30px;
+    }
+
+    a{
+        display: flex;
+        justify-content: center;
+        margin: 0 20px;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    h1{
+        text-align: center;
+        margin-top: 10%;
+    }
+
+    p{
+        text-align: center;
+        margin: 20px 0;
+    }
+
+    .explore-btn{
+        margin-left: auto;
+        margin-right: auto;
+        padding: 10px 20px;
+        width: 100px;
+        color: #111;
+        border: 1px solid #111;
+    }
+
+    .explore-btn:hover{
+        background: #111;
+        color: #fff;
+        transition: 0.5s ease-out;
+    }
+</style>
+<body>
+    <header>
+        <a href="{% url 'home' %}">Home</a>
+        <a href="{% url 'about' %}">About Us</a>
+    </header>
+
+    {% block content %}
+    {% endblock content %}
+</body>
+</html>
